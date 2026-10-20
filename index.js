@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://theintthinzarlwin21191_db_user:MfCUqMZznHBzdXzc@products.o3lclpl.mongodb.net/"
+    "mongodb+srv://theintthinzarlwin21191_db_user:MfCUqMZznHBzdXzc@products.o3lclpl.mongodb.net/test?retryWrites=true&w=majority"
   )
   .then(() => {
     console.log("Connected to database!");
