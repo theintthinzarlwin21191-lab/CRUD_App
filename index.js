@@ -1,3 +1,4 @@
+
 const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./models/product.model.js");
@@ -22,7 +23,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb://localhost:27017/CrudAPP"
+    "mongodb+srv://theintthinzarlwin21191_db_user:MfCUqMZznHBzdXzc@products.o3lclpl.mongodb.net/"
   )
   .then(() => {
     console.log("Connected to database!");
